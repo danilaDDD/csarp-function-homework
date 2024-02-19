@@ -7,7 +7,7 @@
 void Main()
 {
     for(;;){
-        string inputString = ReadString("Введите целое число. Для завершение программы введите q или трехзначное число:");
+        string inputString = ReadString("Введите целое число. Для завершение программы введите q или числа, сумма цифр которого чётная:");
         if(inputString == "q" || IsEvenDigitsSum(inputString)){
             System.Console.WriteLine("STOP");
             break;
