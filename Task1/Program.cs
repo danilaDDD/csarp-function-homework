@@ -6,9 +6,11 @@
 
 void Main()
 {
-    for(;;){
+    for (; ; )
+    {
         string inputString = ReadString("Введите целое число. Для завершение программы введите q или числа, сумма цифр которого чётная:");
-        if(inputString == "q" || IsEvenDigitsSum(inputString)){
+        if (inputString == "q" || IsEvenDigitsSum(inputString))
+        {
             System.Console.WriteLine("STOP");
             break;
         }
@@ -16,7 +18,8 @@ void Main()
     }
 }
 
-string ReadString(string message){
+string ReadString(string message)
+{
     System.Console.Write(message);
     return Console.ReadLine();
 }
@@ -25,7 +28,8 @@ bool IsEvenDigitsSum(string message)
 {
     int number = Convert.ToInt32(message);
     int sum = 0;
-    while(number != 0){
+    while (number != 0)
+    {
         int digit = number % 10;
         sum += digit;
         number /= 10;
